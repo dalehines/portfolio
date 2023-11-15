@@ -115,7 +115,7 @@ img {
 .l-header {
   width: 100%;
   position: fixed;
-  top: 10;
+  top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: #fff;
@@ -135,12 +135,13 @@ img {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: -100%;
     width: 80%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
-    transition: .5s;
+    transition: .4s;
+    
   }
 }
 
@@ -186,4 +187,9 @@ img {
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
+}
+
+/*===== Show Menu =====*/
+.show {
+    right:0
 }
